@@ -30,6 +30,14 @@
                         </a>
                     </li>
                 </ul>
+                <form class="d-flex">
+                    <button 
+                        class="btn btn-primary"
+                        @click.prevent="useDarkNavbar = !useDarkNavbar"   
+                    >
+                    Toggle Navbar
+                    </button>
+                </form>
             </div>
         </nav>
 
@@ -44,7 +52,7 @@
             data() { // this is the state of our application
                 return {
                     activePage: 0,
-                    useDarkNavbar: false,
+                    useDarkNavbar: true,
                     pages: [
                         {
                             link: {text: 'Home', url: 'index.html'},
