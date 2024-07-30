@@ -11,7 +11,7 @@ const toggleNavbarColor = () => {
 <template>
   <div>
     <nav 
-      class="navbar navbar-expand-lg"
+      class="navbar navbar-expand-lg fixed-top"
       :class="{'navbar-light bg-light': !changeColorNav, 'navbar-dark bg-dark': changeColorNav}"
     >
       <div class="container-fluid">
