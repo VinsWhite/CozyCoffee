@@ -3,7 +3,7 @@ import { ref } from 'vue'
 </script>
 
 <template>
-  <div>
-    <p>questa è la about page</p>
+  <div class="text-center mt-4">
+    <p>&copy; Vincenzo Saccone</p>
   </div>
 </template>

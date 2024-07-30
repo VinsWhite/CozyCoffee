@@ -1,6 +1,79 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 
+body {
+    background-color: #F0F0F0 !important;
+}
+
 #icon {
     width: 2em;
 }
+
+.mainTopContainer {
+    width: 100%;
+}
+
+/* Media query per schermi medi e superiori (≥768px) */
+@media (min-width: 768px) {
+    .mainTopContainer {
+        width: 75%;
+    }
+}
+
+.topContainer {
+    background-image: url('assets/img/coffee.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bi {
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.bi-bag:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+.bi-bag-check:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+.bi-clock:hover {
+    transform: scale(1.2);
+}
+
+.bi-basket:hover {
+    transform: scale(1.2);
+}
+
+.clock-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.basket-container {
+    z-index: 1050;
+  }
+  
+  .cart-content {
+    max-width: 300px; 
+    margin-right: 70px; 
+  }
+  
+  .basket-icon {
+    z-index: 1060; 
+  }
+
+  .basket-icon .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding: 0.3em;
+  }
